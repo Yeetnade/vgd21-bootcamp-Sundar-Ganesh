@@ -10,7 +10,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
 
             //Storing.Initialize();
             //Storing.DemoVariables();
-            //Storing.ReadingInput();
+            Storing.ReadingInput();
             Storing.UsingArrays();
 
             Console.WriteLine("Press Any Key to Exit");
