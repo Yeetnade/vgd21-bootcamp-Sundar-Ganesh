@@ -50,5 +50,46 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             Console.WriteLine(a < c);
             Console.WriteLine(a <= c);
         }
+
+        public static void Logic()
+        {
+            bool hasWeapon = true;
+            bool hasMagic = false;
+
+            //Four operators: NOT ! , AND && , OR ||, XOR ^
+            if (!hasMagic) Console.WriteLine("No magic");
+            if (hasWeapon && hasMagic) Console.WriteLine("Has a weapon and magic... very dangerous!");
+            //For && to return TRUE, BOTH must be true: TT
+            if (hasWeapon || hasMagic) Console.WriteLine("Can attack with weapon OR magic");
+            //OR can be true for this combination: FT, TF, TT
+
+            //XOR True for these combinations: FT, TF, 
+            if (hasWeapon ^ hasMagic) Console.WriteLine("Onely one attack method.");
+        }
+
+        public static void Ternary()
+        {
+            int a, b, c;
+            a = 18;
+            b = 19;
+            c = (a != b) ? a : b; //Ternary Operator
+            //c = (test) ? (a if the test is true) : (b if the test is false)
+            Console.WriteLine(c);
+
+            //Equivalent code:
+            if(a != b)
+            {
+                c = a;
+            }
+            else
+            {
+                c = b;
+            }
+
+            //An even/odd tester
+            string Answer = (a % 2 == 0) ? "Even" : "Odd";
+            Console.WriteLine("{0} is {1} ", a, Answer);
+
+        }
     }
 }

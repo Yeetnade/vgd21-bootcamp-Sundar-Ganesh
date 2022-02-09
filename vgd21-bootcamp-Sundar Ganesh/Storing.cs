@@ -8,6 +8,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
     {
         //Enums
         enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+       
 
         //First Method
         public static void Initialize()
@@ -52,7 +53,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
 
         public static void UsingArrays()
         {
-            Console.WriteLine("\nYou Fly into Kings Canyon and land in Skull Town.\nYou encounter it's Wildlife along with some legends");
+            Console.WriteLine("\nYou Fly into Kings Canyon and land in Skull Town. You see a Wingman pistol and grab it.\nYou encounter it's Wildlife along with some legends");
             string[] enemyName = new string[5];
             enemyName[0] = "A Giant Spider";
             enemyName[1] = "A Prowler";
