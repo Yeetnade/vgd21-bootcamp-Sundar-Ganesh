@@ -6,6 +6,9 @@ namespace vgd21_bootcamp_Sundar_Ganesh
 {
     public static class Storing
     {
+        //Enums
+        enum Days { Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday };
+
         //First Method
         public static void Initialize()
         {
@@ -43,7 +46,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             }
             else
             {
-                Console.WriteLine("Get ready for drop we're on Kings Canyon today and Good Luck");
+                Console.WriteLine("Get ready for drop, we're on Kings Canyon today and Good Luck");
             }
         }
 
@@ -57,36 +60,66 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             enemyName[3] = "Jack Cooper";
             enemyName[4] = "BT-7274";
 
-            int[] health = new int[5] {10, 20, 100, 1000, 2000 };
+            int[] health = new int[5] { 10, 20, 100, 1000, 2000 };
 
             System.Random random = new System.Random();
             int num = random.Next(5);
             Console.WriteLine("You encounter {0} in Skull Town.", enemyName[num]);
-            Console.WriteLine(enemyName[num] + " has " + health[num] + " health");
-
-            if(num == 0)
+            if (num == 0)
             {
                 Console.WriteLine("\nThe Prowler uses it's claws to attack you but you use your Wingman to kill the prowler");
-                /*while (true)
+                Console.WriteLine("The Prowler has " + health[num] + " health");
+                while (true)
                 {
                     Console.WriteLine("You Shoot the Wingman");
-                    Console.WriteLine("The Prowler has " + health[num] + " health"); 
+                    Console.WriteLine("The Prowler has " + health[num] + " health");
                     health[num]--;
                     Console.ReadKey();
+                    if (health[num] <= 0)
+                    {
+                        Console.WriteLine("Prowler Killed");
+                        break;
+                    }
 
-                }*/
+                }
 
-                
+
             }
-            if(num == 1)
+            if (num == 1)
             {
                 Console.WriteLine("\nThe Spider tries to web you use but you use your Wingman to kill the spider");
+                Console.WriteLine("The Spider has " + health[num] + " health");
+                while (true)
+                {
+                    Console.WriteLine("You Shoot the Wingman");
+                    Console.WriteLine("The Spider has " + health[num] + " health");
+                    health[num]--;
+                    Console.ReadKey();
+                    if (health[num] == 0)
+                    {
+                        Console.WriteLine("Giant Spider Killed");
+                        break;
+                    }
+                }
             }
-            if(num == 2)
+            if (num == 2)
             {
-                Console.WriteLine("\nThe Dragon takes you to its nest where you slaughter its children and kill the Dragon using your Wingman.\nYou are now known as the Dragon Slayer");
+                Console.WriteLine("\nThe Dragon takes you to its nest");
+                Console.WriteLine("The Dragon has " + health[num] + " health");
+                while (true)
+                {
+                    Console.WriteLine("You Shoot the Wingman");
+                    Console.WriteLine("The Dragon has " + health[num] + " health");
+                    health[num]--;
+                    Console.ReadKey();
+                    if (health[num] == 0)
+                    {
+                        Console.WriteLine("Dragon Killed");
+                        break;
+                    }
+                }
             }
-            if(num == 3)
+            if (num == 3)
             {
                 Console.WriteLine("\nAll attempts to kill Jack Cooper are in vain. He out manuvers you with his wall running tech and kills you");
             }
@@ -96,8 +129,30 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             }
 
 
-            
+
         }
 
-    } //public static class Storing
+        public static void ConstantsAndEnums()
+        {
+            //Constants
+            const double PI = 3.1415926535;
+            Console.WriteLine(PI);
+
+            //PI = 3.14; //Cannot make this change
+
+            //Enums "enumerators" must be declared PRIOR to the methods
+            var dayOfWeek = Days.Sunday;
+            Console.WriteLine(dayOfWeek);
+            if (dayOfWeek == Days.Saturday || dayOfWeek == Days.Sunday)
+            {
+                Console.WriteLine("Weekend!!!!! Yay");
+            }
+            else
+            {
+                Console.WriteLine("Go to Work or School");
+            }
+        }
+
+
+    }
 }
