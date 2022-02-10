@@ -14,10 +14,12 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             //Storing.UsingArrays();
             //Storing.ConstantsAndEnums();
 
-            Operations.Arithmetic();
-            Operations.Logic();
-            Operations.Comparison();
-            Operations.Ternary();
+            //Operations.Arithmetic();
+            //Operations.Logic();
+            //Operations.Comparison();
+            //Operations.Ternary();
+
+            MadLib.Execute();
 
             Console.WriteLine("Press Any Key to Exit");
             Console.ReadKey();
