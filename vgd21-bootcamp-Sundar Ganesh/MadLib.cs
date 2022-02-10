@@ -70,6 +70,10 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             if(a % 2 == 1)
             {
                 Console.WriteLine("Welcome to the shooter");
+                Console.Write("Choose your primary Weapon type: ");
+                string weaponType = Console.ReadLine();
+                Console.Write("Name your Weapon: ");
+                string weaponName = Console.ReadLine();
                 
             }
             else
