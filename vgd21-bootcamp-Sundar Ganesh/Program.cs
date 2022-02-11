@@ -19,7 +19,9 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             //Operations.Comparison();
             //Operations.Ternary();
 
-            MadLib.Execute();
+            //MadLib.Execute();
+
+            MiniDC.StartDC();
 
             Console.WriteLine("Press Any Key to Exit");
             Console.ReadKey();

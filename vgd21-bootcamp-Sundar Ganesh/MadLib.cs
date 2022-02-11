@@ -88,7 +88,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
                 Console.WriteLine("{0} runs towards him while shooting {1} but runs out of ammo before he could get his first kill", gamerTag, weaponName);
                 Console.WriteLine("{0} switches to his {1} named {2} to finsh the job and get his first kill", gamerTag, secondaryWeaponType, secondaryWeaponName);
                 Console.WriteLine("{0} plays for a couple more hours, then decided to leave. \nHowever when he tries to leave, the exit button doesn't show up and his body can't move in the real world", gamerTag);
-                Console.WriteLine("Relizing that {0} is stuck in here for the rest of his life, {0} sobs in regret while constantly getting killed by other players", gamerTag);
+                Console.WriteLine("Relizing that {0} is stuck in here for the rest of his life, \n{0} sobs in regret while constantly getting killed by other players", gamerTag);
 
             }
             else
@@ -99,7 +99,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
                 Console.Write("What will you name it: ");
                 string medivalWeaponName = Console.ReadLine();
                 Console.Write("how many potions would you like to have: ");
-                float potions = Convert.ToInt16(Console.ReadLine());
+                float potions = Convert.ToInt32(Console.ReadLine());
                 float healing = potions / 3;
                 float strength = potions / 3;
                 float magic = potions / 3;
@@ -116,7 +116,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
                 Console.WriteLine("{0} uses {1} to damage the monster But that doesn't do much and {0} is forced to defend with {1}", gamerTag, medivalWeaponName);
                 Console.WriteLine("{0} then drinks {1} healing potions, {2} strength potions, and {3} magic potions, giving him just enough power to slay the beast", gamerTag, healing, strength, magic);
                 Console.WriteLine("{0} plays for a couple more hours, then decided to leave. \nHowever when he tries to leave, the exit button doesn't show up and his body can't move in the real world", gamerTag);
-                Console.WriteLine("Relizing that {0} is stuck in here for the rest of his life, {0} sobs in regret while constantly getting killed by other monsters", gamerTag);
+                Console.WriteLine("Relizing that {0} is stuck in here for the rest of his life, \n{0} sobs in regret while constantly getting killed by other monsters", gamerTag);
 
 
             }
