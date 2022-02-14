@@ -20,7 +20,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             //Creates some monsters... an ARRAY
             Player[] monster = new Player[5];
             monster[0] = new Player(1, "Gargamle the Crusher", 40);
-            monster[1] = new Player(2, "Asher the Nasher", 50);
+            monster[1] = new Player(2, "Asher the Nasher", 50); 
             monster[2] = new Player(3, "Steve Jobs", 100);
             monster[3] = new Player(4, "Willy of the Weak", 5);
             monster[4] = new Player(5, "Tayton the Terrifying", 500);
