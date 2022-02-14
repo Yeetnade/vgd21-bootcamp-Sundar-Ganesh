@@ -23,6 +23,13 @@ namespace vgd21_bootcamp_Sundar_Ganesh
 
             MiniDC.StartDC();
 
+            //Statements.BranchingIf();
+            //Statements.Switching();
+            //Statements.ForLoops();
+            //Statements.WhileLoops();
+            //Statements.LoopingArrays();
+            //Statements.ForEachIterations();
+
             Console.WriteLine("Press Any Key to Exit");
             Console.ReadKey();
         }
