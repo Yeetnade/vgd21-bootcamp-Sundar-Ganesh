@@ -15,7 +15,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             Console.Write("What is your astronaut's name?: ");
             string pName = Console.ReadLine();
             bool sampleCollected = false;
-            Player player = new Player(0, pName, 1000);
+            Player player = new Player(0, pName, 500);
 
             //Access Codes
             bool accessCodeRed = false;
@@ -30,10 +30,10 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             Player[] monster = new Player[6];
             monster[0] = new Player(0, "", 0);
             monster[1] = new Player(1, "Stinger", 40);
-            monster[2] = new Player(2, "Loud Mouth", 50);
-            monster[3] = new Player(3, "Not so Helpful Bot", 100);
-            monster[4] = new Player(4, "Moon Slugs", 5);
-            monster[5] = new Player(5, "Harry", 150);
+            monster[2] = new Player(2, "Loud Mouth", 100);
+            monster[3] = new Player(3, "Not so Helpful Bot", 150);
+            monster[4] = new Player(4, "Moon Slug", 50);
+            monster[5] = new Player(5, "Harry", 200);
 
             //Create some locations
             int maxX = 12;
@@ -75,8 +75,8 @@ namespace vgd21_bootcamp_Sundar_Ganesh
                         
 
                         //Battle!!!!
-                        int damageToMonster = dice.Next(10, 40);
-                        int damageToPlayer = dice.Next(1, 12);
+                        int damageToMonster = dice.Next(10, 30);
+                        int damageToPlayer = dice.Next(4, 12);
 
                         player.Health -= damageToPlayer;
                         monster[mID].Health -= damageToMonster;
