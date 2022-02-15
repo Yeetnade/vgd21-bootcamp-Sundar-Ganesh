@@ -11,11 +11,13 @@ namespace vgd21_bootcamp_Sundar_Ganesh
         public string Description;
         public int MonsterID;
 
+
         public Location(string locationName, string description, int monsterID)
         {
             LocationName = locationName;
             Description = description;
             MonsterID = monsterID;
+
         }
 
         public static void DrawMap(Location[,] loc, int playerX, int playerY)
@@ -34,16 +36,22 @@ namespace vgd21_bootcamp_Sundar_Ganesh
                     //if (loc[x, y].LocationName != null || loc[x, y].MonsterID != 0)
                     if (loc[x, y] != null)
                     {
+                        Console.ForegroundColor = ConsoleColor.Red;
                         locName = loc[x, y].LocationName.Substring(0, 1);
+
                         //locName = "+";
                     }
                     if (x == playerX && y == playerY)
                     {
+                        Console.ForegroundColor = ConsoleColor.Green;
                         locName = "X";
                     }
+
                     Console.Write(locName);
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
                 Console.WriteLine("");
+                Console.ForegroundColor = ConsoleColor.White;
             }
         }
     }

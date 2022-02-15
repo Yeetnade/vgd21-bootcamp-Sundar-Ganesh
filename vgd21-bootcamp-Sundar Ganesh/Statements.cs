@@ -20,7 +20,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             }
             else
             {
-                Console.WriteLine("Welcome to the party of the sweats and no-lifers");
+                Console.WriteLine("Welcome to the party of the sweats");
                 Console.WriteLine("Go touch some grass");
             }
 
