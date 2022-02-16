@@ -205,6 +205,25 @@ namespace vgd21_bootcamp_Sundar_Ganesh
                 //Draw Map
                 if (cmd == "m") Location.DrawMap(location, pX, pY);
 
+                //Save and Load Player Data
+                try
+                {
+                    if (cmd == "save") SaveLoadData.SavePlayerData(player);
+
+                }
+                catch
+                {
+                    Console.WriteLine("Could not save data.");
+                }
+
+                try
+                {
+                    if (cmd == "load") player = SaveLoadData.LoadPlayerData(player);
+                }
+                catch
+                {
+                    Console.WriteLine("Could not restore player data");
+                }
             }//end of while true
 
         }

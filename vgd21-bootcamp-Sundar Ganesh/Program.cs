@@ -30,6 +30,9 @@ namespace vgd21_bootcamp_Sundar_Ganesh
             //Statements.LoopingArrays();
             //Statements.ForEachIterations();
 
+            //ErrorTrapping.DontCatchError();
+            //ErrorTrapping.CatchError();
+
             Console.WriteLine("Press Any Key to Exit");
             Console.ReadKey();
         }

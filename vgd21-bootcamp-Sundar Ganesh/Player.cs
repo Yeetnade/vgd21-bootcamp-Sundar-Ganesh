@@ -7,10 +7,14 @@ namespace vgd21_bootcamp_Sundar_Ganesh
     public class Player
     {
         //Properties
-        public int ID; // 0 is reserved for the actual player, all others are monsters
-        public string Name;
-        public int Health;
+        public int ID { get; set; } // 0 is reserved for the actual player, all others are monsters
+        public string Name { get; set; }
+        public int Health { get; set; }
 
+        public Player()
+        {
+
+        }
         public Player(int iD, string name, int health)
         {
             ID = iD;
