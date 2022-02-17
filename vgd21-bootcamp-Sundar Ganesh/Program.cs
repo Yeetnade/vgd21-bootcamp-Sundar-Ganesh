@@ -21,7 +21,7 @@ namespace vgd21_bootcamp_Sundar_Ganesh
 
             //MadLib.Execute();
 
-            MiniDC.StartDC();
+            //MiniDC.StartDC();
 
             //Statements.BranchingIf();
             //Statements.Switching();
@@ -32,6 +32,13 @@ namespace vgd21_bootcamp_Sundar_Ganesh
 
             //ErrorTrapping.DontCatchError();
             //ErrorTrapping.CatchError();
+
+            StringWork.StringFeatures();
+            StringWork.ManipulatingStrings();
+            StringWork.JoinAndCompare();
+            StringWork.FindingSubStrings();
+            StringWork.FormattingStrings();
+            StringWork.DateStrings();
 
             Console.WriteLine("Press Any Key to Exit");
             Console.ReadKey();
